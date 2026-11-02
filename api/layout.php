@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . "/flash.php"; ?>
 <style>
 body {
 	margin: 0;
@@ -25,7 +26,8 @@ nav {
 }
 .navsplit h2 {
 	font-weight: normal;
-	margin: 0; padding: 0;
+	margin: 0;
+	padding: 0;
 	margin-right: auto;
 }
 nav a {
@@ -33,14 +35,10 @@ nav a {
 }
 </style>
 <nav>
-<div class="navsplit">
-<h2>travelling<b>entertainers</b>.com</h2>
-<a href="index.php">Home</a>
-</div>
+	<div class="navsplit">
+		<h2>travelling<b>entertainers</b>.com</h2>
+		<a href="index.php">Home</a>
+	</div>
 </nav>
-<?php
-require_once __DIR__ . "/flash.php";
-
-display_flash();
-?>
 <main>
+<?php display_flash(); ?>
